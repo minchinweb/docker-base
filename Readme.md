@@ -61,6 +61,11 @@ LinuxServer.io only has a certain selection of containers that they maintain,
 and I wanted to apply this set up to other containers. By the time I'd figured
 out how the system working, I'd basically rebuilt their base container.
 
+- what LinuxServer.io says about [PUID and
+  GUID](https://www.linuxserver.io/docs/puid-pgid)
+- what LinuxServer.io says about [container
+  volumes](https://www.linuxserver.io/docs/persisting-data)
+
 [s6-overlay](https://github.com/just-containers/s6-overlay/) is a project used
 by LinuxServer.io, and so used here too, to deal with container that launch
 multiple processes. The s6 system is used to run the scripts that fix the user
