@@ -4,4 +4,4 @@
 
 FROM lsiobase/ubuntu:bionic
 
-COPY ./root/ /
+COPY root/ /
