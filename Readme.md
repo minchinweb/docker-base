@@ -64,7 +64,7 @@ space.
 ## Personal Additions and Notes
 
 - add various tags as per [label-schema.org](http://label-schema.org/rc1/)
-- added Canadian English locale
+- added Canadian English locale, and sets the language to this
 
 ## Prior Art
 
