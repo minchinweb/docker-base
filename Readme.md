@@ -3,10 +3,13 @@
 This is my personal base container for Docker. Maybe you'll find it helpful
 too...
 
-![Docker Pulls](https://img.shields.io/docker/pulls/minchinweb/base.svg?style=plastic)
+[![Docker Pulls](https://img.shields.io/docker/pulls/minchinweb/base.svg?style=popout)](https://hub.docker.com/r/minchinweb/base)
+[![Size & Layers](https://images.microbadger.com/badges/image/minchinweb/base.svg)](https://microbadger.com/images/minchinweb/base)
+[![GitHub issues](https://img.shields.io/github/issues-raw/minchinweb/docker-base.svg?style=popout)](https://github.com/MinchinWeb/docker-base/issues)
+<!--
 ![MicroBadger Layers](https://img.shields.io/microbadger/layers/layers/minchinweb/base.svg?style=plastic)
 ![MicroBadger Size](https://img.shields.io/microbadger/image-size/image-size/minchinweb/base.svg?style=plastic)
-![GitHub issues](https://img.shields.io/github/issues-raw/minchinweb/docker-base.svg?style=plastic)
+-->
 
 ## How to Use This
 
