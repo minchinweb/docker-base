@@ -3,6 +3,11 @@
 This is my personal base container for Docker. Maybe you'll find it helpful
 too...
 
+![Docker Pulls](https://img.shields.io/docker/pulls/minchinweb/base.svg?style=plastic)
+![MicroBadger Layers](https://img.shields.io/microbadger/layers/layers/minchinweb/base.svg?style=plastic)
+![MicroBadger Size](https://img.shields.io/microbadger/image-size/image-size/minchinweb/base.svg?style=plastic)
+![GitHub issues](https://img.shields.io/github/issues-raw/minchinweb/docker-base.svg?style=plastic)
+
 ## How to Use This
 
 The container will probably not be used directly, but rather as a for building
@@ -50,6 +55,10 @@ whatever permissions it may need. Within the container, this user is named
 As another bonus, Docker will cache layers (the parts a container is built up
 of), and so by using a constant base image on in my Docker setup, it saves on
 space.
+
+## Personal Additions and Notes
+
+- added Canadian English locale
 
 ## Prior Art
 
