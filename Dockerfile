@@ -31,3 +31,8 @@ ENV COMMIT_SHA=${COMMIT} \
     BUILD_DATE=${BUILD_DATE}
 
 COPY root/ /
+
+# having your PID 1 name "init" causes weird Docker bugs; renaming is one fix
+# https://github.com/just-containers/s6-overlay/issues/158#issuecomment-266913426
+RUN ln -s /init /s6-init
+ENTRYPOINT [ "/s6-init" ]

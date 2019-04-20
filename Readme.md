@@ -65,6 +65,9 @@ space.
 
 - add various tags as per [label-schema.org](http://label-schema.org/rc1/)
 - added Canadian English locale, and sets the language to this
+- init script is found at `/s6-init`. Turns out naming the process `init`
+  [causes wierd Docker
+  bugs](https://github.com/just-containers/s6-overlay/issues/158)
 
 ## Prior Art
 
@@ -96,3 +99,5 @@ id problem.
 - For whatever reason, I couldn't get this image to build locally and work.
   However, it works when built on Docker Cloud/Docker Hub.
 - Currently, only the "latest" tag (for the Docker image) is supplied.
+- `/init` still exists, but don't use it. Use `/s6-init` in stead (see
+  [here](https://github.com/just-containers/s6-overlay/issues/158))
