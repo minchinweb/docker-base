@@ -7,7 +7,7 @@
 echo "[***] Post_Push hook running"
 
 # get Ubunut version from image's environmental variables, without running it
-export UBUNTU_CODENAME=$(docker inspect -f '{{range $index, $value := .Config.Env}}{{$value}} {{end}}' $IMAGE_NAME | grep -oP 'UBUNTU_VERSION=\K\d+(.\d+(.\d+\w*)?)?')
+export UBUNTU_CODENAME=$(docker inspect -f '{{range $index, $value := .Config.Env}}{{$value}} {{end}}' $IMAGE_NAME | grep -oP 'UBUNTU_VERSION=\K\w+')
 echo "     Versions: $UBUNTU_CODENAME  $SOURCE_COMMIT"
 
 docker tag $IMAGE_NAME $DOCKER_REPO:$UBUNTU_CODENAME

@@ -100,5 +100,8 @@ id problem.
 
 - For whatever reason, I couldn't get this image to build locally and work.
   However, it works when built on Docker Cloud/Docker Hub.
-- `/init` still exists, but don't use it. Use `/s6-init` in stead (see
+- `/init` still exists, but don't use it. Use `/s6-init` instead (see
   [here](https://github.com/just-containers/s6-overlay/issues/158))
+- I've had some issues getting services under the init system to work. I
+  haven't gotten it solved yet, so I'm not sure whether the issue is something
+  with it, or something with my code...
