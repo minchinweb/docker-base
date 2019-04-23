@@ -5,10 +5,18 @@
 # $IMAGE_NAME var is injected into the build so the tag is correct.
 echo "[***] Build hook running"
 
+export VERSION=$(git describe --tags --always)
+export URL=$(git config --get remote.origin.url)
+export BUILD_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+echo "      VERSION  COMMIT  URL  BRANCH  BUILD_DATE"
+echo "      $VERSION  $SOURCE_COMMIT  $URL  $SOURCE_BRANCH  $BUILD_DATE"
+echo ""
+
 docker build \
-  --build-arg VERSION=$(git describe --tags --always) \
-  --build-arg COMMIT=$(git rev-parse HEAD) \
-  --build-arg URL=$(git config --get remote.origin.url) \
-  --build-arg BRANCH=$(git rev-parse --abbrev-ref HEAD) \
-  --build-arg BUILD_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") \
+  --build-arg VERSION=$VERSION \
+  --build-arg COMMIT=$SOURCE_COMMIT \
+  --build-arg URL=$ULR \
+  --build-arg BRANCH=$SOURCE_BRANCH \
+  --build-arg BUILD_DATE=$BUILD_DATE \
+  -f $DOCKERFILE_PATH \
   -t $IMAGE_NAME .

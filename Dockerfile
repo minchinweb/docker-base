@@ -4,20 +4,14 @@
 
 # many options, but probably 'bionic' and 'xenial' are of most interest
 ARG UBUNTU_VERSION=bionic
+
+FROM lsiobase/ubuntu:${UBUNTU_VERSION}
+
 # these are provided by the build hook when run on Docker Hub
 ARG BUILD_DATE="1970-01-01T00:00:00Z"
 ARG COMMIT="local-build"
 ARG URL=""
 ARG BRANCH="none"
-
-FROM lsiobase/ubuntu:${UBUNTU_VERSION}
-
-RUN \
-    echo "**** generate en-CA locale ****" && \
-    locale-gen en_CA.UTF-8
-
-ENV LANGUAGE=en_CA.UTF-8 \
-    LANG=en_CA.UTF-8
 
 LABEL maintainer="MinchinWeb" \
       org.label-schema.description="Personal base image, based on Ubuntu" \
@@ -26,9 +20,15 @@ LABEL maintainer="MinchinWeb" \
       org.label-schema.vcs-ref=${COMMIT} \
       org.label-schema.schema-version="1.0.0-rc1"
 
-ENV COMMIT_SHA=${COMMIT} \
-    COMMIT_BRANCH=${BRANCH} \
-    BUILD_DATE=${BUILD_DATE}
+ARG UBUNTU_VERSION
+ENV UBUNTU_VERSION=${UBUNTU_VERSION}
+
+RUN \
+    echo "**** generate en-CA locale ****" && \
+    locale-gen en_CA.UTF-8
+
+ENV LANGUAGE=en_CA.UTF-8 \
+    LANG=en_CA.UTF-8
 
 COPY root/ /
 
