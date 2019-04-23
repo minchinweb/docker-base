@@ -11,7 +11,7 @@ export UBUNTU_CODENAME=$(docker inspect -f '{{range $index, $value := .Config.En
 echo "     Versions: $UBUNTU_CODENAME  $SOURCE_COMMIT"
 
 docker tag $IMAGE_NAME $DOCKER_REPO:$UBUNTU_CODENAME
-docker push $DOCKER_REPO:$PYTHON_VERSION_X_Y_Z
+docker push $DOCKER_REPO:$UBUNTU_CODENAME
 
 docker tag $IMAGE_NAME $DOCKER_REPO:$SOURCE_COMMIT
 docker push $DOCKER_REPO:$SOURCE_COMMIT
