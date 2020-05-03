@@ -3,7 +3,7 @@
 # but remove some of the branding
 
 # many options, but probably 'focal', 'bionic', and 'xenial' are of most interest
-ARG UBUNTU_VERSION=bionic
+ARG UBUNTU_VERSION=focal
 
 FROM lsiobase/ubuntu:${UBUNTU_VERSION}
 
