@@ -2,7 +2,7 @@
 # Use LinuxServer.io Ubuntu:Bionic (18.04) base with s6
 # but remove some of the branding
 
-# many options, but probably 'bionic' and 'xenial' are of most interest
+# many options, but probably 'focal', 'bionic', and 'xenial' are of most interest
 ARG UBUNTU_VERSION=bionic
 
 FROM lsiobase/ubuntu:${UBUNTU_VERSION}
@@ -10,7 +10,7 @@ FROM lsiobase/ubuntu:${UBUNTU_VERSION}
 # these are provided by the build hook when run on Docker Hub
 ARG BUILD_DATE="1970-01-01T00:00:00Z"
 ARG COMMIT="local-build"
-ARG URL=""
+ARG URL="https://github.com/MinchinWeb/docker-base"
 ARG BRANCH="none"
 
 LABEL maintainer="MinchinWeb" \
