@@ -66,7 +66,7 @@ space.
 - add various tags as per [label-schema.org](http://label-schema.org/rc1/)
 - added Canadian English locale, and sets the language to this
 - init script is found at `/s6-init`. Turns out naming the process `init`
-  [causes wierd Docker
+  [causes weird Docker
   bugs](https://github.com/just-containers/s6-overlay/issues/158)
 - when built on Docker Hub, is tagged with "latest", the Ubuntu codename (e.g.
   "bionic"), and the Git commit ID (a randomish string of numbers and letters)
@@ -86,13 +86,13 @@ out how the system working, I'd basically rebuilt their base container.
 - what LinuxServer.io says about [container
   volumes](https://www.linuxserver.io/docs/persisting-data)
 
-Alpine Linux is often used as a base for container, owing to it's small size
+Alpine Linux is often used as a base for container, owing to its small size
 (quoted at ~5MB). However, I figure the trade off of being able to use Ubuntu
 under the hood, and not being required to learn yet another variant of Linux,
 is worth slightly larger size (this image comes in at ~44MB).
 
 [s6-overlay](https://github.com/just-containers/s6-overlay/) is a project used
-by LinuxServer.io, and so used here too, to deal with container that launch
+by LinuxServer.io, and so used here too, to deal with containers that launch
 multiple processes. The s6 system is used to run the scripts that fix the user
 id problem.
 
