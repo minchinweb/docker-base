@@ -1,5 +1,5 @@
 # Base Image
-# Use LinuxServer.io Ubuntu:Bionic (18.04) base with s6
+# Use LinuxServer.io Ubuntu:Focal (20.04) base with s6
 # but remove some of the branding
 
 # many options, but probably 'focal', 'bionic', and 'xenial' are of most interest
