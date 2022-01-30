@@ -2,10 +2,10 @@
 # Use LinuxServer.io Ubuntu:Focal (20.04) base with s6
 # but remove some of the branding
 
-# many options, but probably 'focal', 'bionic', and 'xenial' are of most interest
+# many options, but probably 'jammy', 'focal', 'bionic', and 'xenial' are of most interest
 ARG UBUNTU_VERSION=focal
 
-FROM lsiobase/ubuntu:${UBUNTU_VERSION}
+FROM ghcr.io/linuxserver/baseimage-ubuntu:${UBUNTU_VERSION}
 
 # these are provided by the build hook when run on Docker Hub
 ARG BUILD_DATE="1970-01-01T00:00:00Z"

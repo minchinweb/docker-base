@@ -3,11 +3,11 @@
 This is my personal base container for Docker. Maybe you'll find it helpful
 too...
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/minchinweb/base.svg?style=popout)](https://hub.docker.com/r/minchinweb/base)
-![Size & Layers](https://img.shields.io/docker/image-size/minchinweb/base?sort=semver)
 [![GitHub issues](https://img.shields.io/github/issues-raw/minchinweb/docker-base.svg?style=popout)](https://github.com/MinchinWeb/docker-base/issues)
 <!--
+[![Docker Pulls](https://img.shields.io/docker/pulls/minchinweb/base.svg?style=popout)](https://hub.docker.com/r/minchinweb/base)
 ![Docker Image Version](https://img.shields.io/docker/v/minchinweb/base?sort=date)
+![Size & Layers](https://img.shields.io/docker/image-size/minchinweb/base?sort=semver)
 -->
 
 ## How to Use This
@@ -16,7 +16,7 @@ The container will probably not be used directly, but rather as a for building
 other (Docker) containers on. To do that, specify this as your base image (in
 your `Dockerfile`):
 
-    FROM minchinweb/base
+    FROM ghcr.io/minchinweb/base:focal
 
     # ... and the rest
 
