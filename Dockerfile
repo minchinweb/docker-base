@@ -3,7 +3,7 @@
 # but remove some of the branding
 
 # many options, but probably 'jammy', 'focal', 'bionic', and 'xenial' are of most interest
-ARG UBUNTU_VERSION=focal
+ARG UBUNTU_VERSION=jammy
 
 FROM ghcr.io/linuxserver/baseimage-ubuntu:${UBUNTU_VERSION}
 

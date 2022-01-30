@@ -16,7 +16,7 @@ The container will probably not be used directly, but rather as a for building
 other (Docker) containers on. To do that, specify this as your base image (in
 your `Dockerfile`):
 
-    FROM ghcr.io/minchinweb/base:focal
+    FROM ghcr.io/minchinweb/base:jammy
 
     # ... and the rest
 
