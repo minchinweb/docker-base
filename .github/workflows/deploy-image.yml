@@ -7,7 +7,7 @@ name: Create and publish a Docker image
 
 on:
   push:
-    branches: ['master']
+    branches: ['master', 'focal', 'jammy']
   workflow_dispatch:
 
 env:
