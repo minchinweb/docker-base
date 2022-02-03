@@ -1,7 +1,7 @@
 # Personal Base Container
 
-This is my personal base container for Docker. Maybe you'll find it helpful
-too...
+This is my personal base container for Docker. It provides a basic Ubuntu 20.04
+(aka "Focal") or 22.04 (aka "Jammy") image. Maybe you'll find it helpful too...
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/minchinweb/docker-base.svg?style=popout)](https://github.com/MinchinWeb/docker-base/issues)
 <!--
@@ -67,8 +67,9 @@ space.
 - init script is found at `/s6-init`. Turns out naming the process `init`
   [causes weird Docker
   bugs](https://github.com/just-containers/s6-overlay/issues/158)
-- when built on Docker Hub, is tagged with "latest", the Ubuntu codename (e.g.
-  "bionic"), and the Git commit ID (a randomish string of numbers and letters)
+- when built <del>on Docker Hub</del> via GitHub Actions and published to the
+  GitHub Container Registry, is tagged with "latest", the Ubuntu codename (e.g.
+  "focal"), and the Git commit ID (a randomish string of numbers and letters)
 
 ## Prior Art
 
@@ -104,3 +105,6 @@ id problem.
 - I've had some issues getting services under the init system to work. I
   haven't gotten it solved yet, so I'm not sure whether the issue is something
   with it, or something with my code...
+- this image doesn't automatically rebuild when the upstream image changes, but
+  I have set up GitHub Actions to rebuild this image every week to approximate
+  that automation.
