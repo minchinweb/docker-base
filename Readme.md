@@ -108,3 +108,6 @@ id problem.
 - this image doesn't automatically rebuild when the upstream image changes, but
   I have set up GitHub Actions to rebuild this image every week to approximate
   that automation.
+- if you use this as a base image, you may need to set `ENV S6_KEEP_ENV=1` in
+  your `Dockerfile` if you want your default script to have access to your
+  environmental variables.
