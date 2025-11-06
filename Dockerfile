@@ -2,8 +2,15 @@
 # Use LinuxServer.io Ubuntu:Focal (20.04) base with s6
 # but remove some of the branding
 
-# many options, but probably 'jammy', 'focal', 'bionic', and 'xenial' are of most interest
-ARG UBUNTU_VERSION=jammy
+# 14.04 - Trusty Tahr
+# 16.04 - Xenial Xerus
+# 18.04 - Vionic Beaver
+# 20.04 - Focal Fossa
+# 22.04 - Jammy Jellyfish
+# 24.04 - Nobal Numbat
+
+# many options, but probably 'noble' and 'jammy' are of most interest
+ARG UBUNTU_VERSION=noble
 
 FROM ghcr.io/linuxserver/baseimage-ubuntu:${UBUNTU_VERSION}
 

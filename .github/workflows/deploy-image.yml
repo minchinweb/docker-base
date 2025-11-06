@@ -7,7 +7,7 @@ name: Create and publish a Docker image
 
 on:
   push:
-    branches: ['master', 'focal', 'jammy']
+    branches: ['master', 'jammy', 'nobel']
   workflow_dispatch:
   schedule:
     # 4:05am Monday UTC; Sunday night local time

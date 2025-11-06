@@ -1,7 +1,7 @@
 # Personal Base Container
 
-This is my personal base container for Docker. It provides a basic Ubuntu 20.04
-(aka "Focal") or 22.04 (aka "Jammy") image. Maybe you'll find it helpful too...
+This is my personal base container for Docker. It provides a basic Ubuntu 22.04
+(aka "Jammy") or 24.04 (aka "Nobel") image. Maybe you'll find it helpful too...
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/minchinweb/docker-base.svg?style=popout)](https://github.com/MinchinWeb/docker-base/issues)
 <!--
@@ -16,7 +16,7 @@ The container will probably not be used directly, but rather as a for building
 other (Docker) containers on. To do that, specify this as your base image (in
 your `Dockerfile`):
 
-    FROM ghcr.io/minchinweb/base:jammy
+    FROM ghcr.io/minchinweb/base:noble
 
     # ... and the rest
 
@@ -69,7 +69,7 @@ space.
   bugs](https://github.com/just-containers/s6-overlay/issues/158)
 - when built <del>on Docker Hub</del> via GitHub Actions and published to the
   GitHub Container Registry, is tagged with "latest", the Ubuntu codename (e.g.
-  "focal"), and the Git commit ID (a randomish string of numbers and letters)
+  "noble"), and the Git commit ID (a random-ish string of numbers and letters)
 
 ## Prior Art
 
