@@ -38,6 +38,7 @@ ENV LANGUAGE=en_CA.UTF-8 \
     LANG=en_CA.UTF-8
 
 COPY root/ /
+RUN chown abc:abc -R /etc/cont-init.d
 
 # having your PID 1 named "init" causes weird Docker bugs; renaming is one fix
 # https://github.com/just-containers/s6-overlay/issues/158#issuecomment-266913426
