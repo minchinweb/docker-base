@@ -1,2 +1,2 @@
-https://minchin.ca
-https://github.com/minchinweb/docker-base
+- https://minchin.ca
+- https://github.com/minchinweb/docker-base
