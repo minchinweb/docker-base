@@ -3,6 +3,7 @@
 This is my personal base container for Docker. It provides a basic Ubuntu 22.04
 (aka "Jammy") or 24.04 (aka "Nobel") image. Maybe you'll find it helpful too...
 
+[![Create and publish a Docker image](https://github.com/minchinweb/docker-base/actions/workflows/deploy-image.yml/badge.svg)](https://github.com/minchinweb/docker-base/actions/workflows/deploy-image.yml)
 [![GitHub issues](https://img.shields.io/github/issues-raw/minchinweb/docker-base.svg?style=popout)](https://github.com/MinchinWeb/docker-base/issues)
 <!--
 [![Docker Pulls](https://img.shields.io/docker/pulls/minchinweb/base.svg?style=popout)](https://hub.docker.com/r/minchinweb/base)
