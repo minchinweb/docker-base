@@ -1,7 +1,7 @@
 # Personal Base Container
 
 This is my personal base container for Docker. It provides a basic Ubuntu 22.04
-(aka "Jammy") or 24.04 (aka "Nobel") image. Maybe you'll find it helpful too...
+(aka "Jammy") or 24.04 (aka "Noble") image. Maybe you'll find it helpful too...
 
 [![Create and publish a Docker image](https://github.com/minchinweb/docker-base/actions/workflows/deploy-image.yml/badge.svg)](https://github.com/minchinweb/docker-base/actions/workflows/deploy-image.yml)
 [![GitHub issues](https://img.shields.io/github/issues-raw/minchinweb/docker-base.svg?style=popout)](https://github.com/MinchinWeb/docker-base/issues)
@@ -22,7 +22,7 @@ your `Dockerfile`):
     # ... and the rest
 
 You also probably want to set the UID and GID (*User ID* number and *Group ID*
-number). This can be done through the environmental variables `PUID` and `GUID`
+number). This can be done through the environmental variables `PUID` and `PGID`
 (either the `-e` option at the command line, or the `environment` key in your
 *docker-compose.yaml* file).
 

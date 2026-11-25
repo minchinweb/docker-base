@@ -15,7 +15,7 @@ echo ""
 docker build \
   --build-arg VERSION=$VERSION \
   --build-arg COMMIT=$SOURCE_COMMIT \
-  --build-arg URL=$ULR \
+  --build-arg URL=$URL \
   --build-arg BRANCH=$SOURCE_BRANCH \
   --build-arg BUILD_DATE=$BUILD_DATE \
   -f $DOCKERFILE_PATH \
